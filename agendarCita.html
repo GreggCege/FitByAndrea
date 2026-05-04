@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita - FitByAndrea</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;800&display=swap" rel="stylesheet">
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <h1 class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">FitBy<span class="text-green">Andrea</span></a></h1>
+        </nav>
+
+        <!-- Agendar Cita Section -->
+        <div class="contact-header" style="padding-top: 20px;">
+            <div class="badge">Asesoría</div>
+            <h2 class="section-title">Reserva tu lugar</h2>
+        </div>
+
+        <section class="contact" id="agendar-cita">
+            <div class="contact-container">
+                <form class="contact-form" id="agendar-form">
+                    <div class="form-group">
+                        <label for="agendar-name">Nombre completo</label>
+                        <input type="text" id="agendar-name" name="name" placeholder="Ej. Juan Pérez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="agendar-phone">Teléfono (WhatsApp)</label>
+                        <input type="tel" id="agendar-phone" name="phone" placeholder="+52 123 456 7890" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="agendar-goal">¿Cuál es tu objetivo?</label>
+                        <select id="agendar-goal" name="goal" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="perder_grasa">Pérdida de grasa</option>
+                            <option value="aumentar_masa">Aumento de masa muscular</option>
+                            <option value="recomposicion">Recomposición corporal</option>
+                            <option value="rendimiento">Mejorar rendimiento físico</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="agendar-level">Nivel de experiencia</label>
+                        <select id="agendar-level" name="level" required>
+                            <option value="" disabled selected>Selecciona tu nivel</option>
+                            <option value="principiante">Principiante</option>
+                            <option value="intermedio_avanzado">Intermedio / Avanzado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="agendar-time">Horarios disponibles</label>
+                        <select id="agendar-time" name="time" required>
+                            <option value="" disabled selected>Selecciona un horario</option>
+                            <option value="manana">Mañana (8:00 AM - 12:00 PM)</option>
+                            <option value="tarde">Tarde (1:00 PM - 5:00 PM)</option>
+                            <option value="noche">Noche (6:00 PM - 9:00 PM)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="btn-submit-agendar">
+                        Agendar mi cita
+                        <span class="icon">➔</span>
+                    </button>
+                    
+                    <a href="index.html" style="display:block; text-align:center; color:var(--text-muted); margin-top:20px; text-decoration:none; font-weight:500;">← Volver al inicio</a>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer"
+            style="text-align: center; padding: 40px 5%; color: var(--text-muted); border-top: 1px solid rgba(255,255,255,0.1); margin-top: auto;">
+            <p>&copy; 2026 FitByAndrea. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5562305016" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M16.002 0c-8.837 0-16 7.163-16 16 0 2.825 0.741 5.485 2.051 7.82l-2.051 8.18 8.35-2.051c2.298 1.189 4.887 1.865 7.65 1.865 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16.002 29.479c-2.483 0-4.821-0.613-6.903-1.691l-0.495-0.256-5.060 1.244 1.264-4.939-0.281-0.512c-1.18-2.148-1.841-4.63-1.841-7.247 0-7.82 6.356-14.175 14.175-14.175s14.175 6.356 14.175 14.175-6.356 14.175-14.175 14.175z"
+                fill="currentColor" />
+            <path
+                d="M23.111 20.316c-0.344-0.173-2.036-1.004-2.352-1.121-0.315-0.115-0.545-0.173-0.774 0.173-0.23 0.344-0.889 1.121-1.090 1.35-0.201 0.23-0.401 0.259-0.745 0.086-0.344-0.173-1.454-0.536-2.77-1.708-1.025-0.912-1.717-2.036-1.918-2.38s-0.021-0.531 0.151-0.702c0.155-0.155 0.344-0.402 0.516-0.603 0.172-0.201 0.23-0.344 0.344-0.573 0.115-0.23 0.057-0.431-0.029-0.603-0.086-0.173-0.774-1.867-1.061-2.556-0.279-0.672-0.563-0.581-0.774-0.591-0.201-0.010-0.431-0.010-0.66-0.010s-0.602 0.086-0.918 0.431c-0.315 0.344-1.205 1.176-1.205 2.868s1.233 3.328 1.405 3.558c0.172 0.23 2.426 3.702 5.877 5.191 0.822 0.354 1.464 0.567 1.966 0.726 0.826 0.262 1.579 0.225 2.176 0.136 0.666-0.099 2.036-0.832 2.323-1.636 0.287-0.803 0.287-1.492 0.201-1.636-0.086-0.144-0.315-0.23-0.66-0.402z"
+                fill="currentColor" />
+        </svg>
+    </a>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
