@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const whatsAppLink = "https://wa.me/5562305016"; // TU NÚMERO DE WHATSAPP AQUÍ
+    const whatsAppLink = "https://wa.me/5519000420"; // TU NÚMERO DE WHATSAPP AQUÍ
 
     // --- 1. Formulario Especial para "Agendar Cita" (en agendarCita.html) ---
     const formAgendar = document.getElementById("agendar-form");
